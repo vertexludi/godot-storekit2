@@ -174,7 +174,7 @@
 				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
 				COPY_PHASE_STRIP = NO;
 				DEBUG_INFORMATION_FORMAT = dwarf;
-				DEVELOPMENT_TEAM = 2YWU7BS8N9;
+				DEVELOPMENT_TEAM = 0AAA0AA0A0;
 				ENABLE_STRICT_OBJC_MSGSEND = YES;
 				ENABLE_TESTABILITY = YES;
 				ENABLE_USER_SCRIPT_SANDBOXING = YES;
@@ -236,7 +236,7 @@
 				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
 				COPY_PHASE_STRIP = NO;
 				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
-				DEVELOPMENT_TEAM = 2YWU7BS8N9;
+				DEVELOPMENT_TEAM = 0AAA0AA0A0;
 				ENABLE_NS_ASSERTIONS = NO;
 				ENABLE_STRICT_OBJC_MSGSEND = YES;
 				ENABLE_USER_SCRIPT_SANDBOXING = YES;
@@ -260,11 +260,39 @@
 		5EF48AC72E71AEE3007295F0 /* Debug */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++17";
+				CLANG_WARN_DOCUMENTATION_COMMENTS = NO;
 				CODE_SIGN_STYLE = Automatic;
-				DEVELOPMENT_TEAM = 2YWU7BS8N9;
-				OTHER_LDFLAGS = "-ObjC";
+				DEVELOPMENT_TEAM = 0AAA0AA0A0;
+				GCC_ENABLE_CPP_EXCEPTIONS = NO;
+				GCC_ENABLE_CPP_RTTI = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = NO;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES;
+				HEADER_SEARCH_PATHS = (
+					"${PROJECT_DIR}/godot/platform/ios",
+					"${PROJECT_DIR}/godot",
+					"$(inherited)",
+				);
+				IPHONEOS_DEPLOYMENT_TARGET = 13;
+				LIBRARY_SEARCH_PATHS = (
+					"${PROJECT_DIR}/bin",
+					"$(inherited)",
+				);
+				OTHER_CFLAGS = (
+					"-fcxx-modules",
+					"-fmodules",
+					"-DDEBUG_MEMORY_ALLOC",
+					"-DDEBUG=1",
+					"-DDEBUG_ENABLED",
+					"-D_DEBUG",
+					"-DDISABLE_FORCED_INLINE",
+				);
+				OTHER_LDFLAGS = (
+					"-ObjC",
+					"$(inherited)",
+				);
 				PRODUCT_NAME = "$(TARGET_NAME)";
-				SKIP_INSTALL = YES;
+				SKIP_INSTALL = NO;
 				TARGETED_DEVICE_FAMILY = "1,2";
 			};
 			name = Debug;
@@ -272,11 +300,36 @@
 		5EF48AC82E71AEE3007295F0 /* Release */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++17";
+				CLANG_WARN_DOCUMENTATION_COMMENTS = NO;
 				CODE_SIGN_STYLE = Automatic;
-				DEVELOPMENT_TEAM = 2YWU7BS8N9;
-				OTHER_LDFLAGS = "-ObjC";
+				DEVELOPMENT_TEAM = 0AAA0AA0A0;
+				GCC_ENABLE_CPP_EXCEPTIONS = NO;
+				GCC_ENABLE_CPP_RTTI = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = NO;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES;
+				HEADER_SEARCH_PATHS = (
+					"${PROJECT_DIR}/godot/platform/ios",
+					"${PROJECT_DIR}/godot",
+					"$(inherited)",
+				);
+				IPHONEOS_DEPLOYMENT_TARGET = 13;
+				LIBRARY_SEARCH_PATHS = (
+					"${PROJECT_DIR}/bin",
+					"$(inherited)",
+				);
+				OTHER_CFLAGS = (
+					"-fcxx-modules",
+					"-fmodules",
+					"-DNDEBUG",
+					"-DNS_BLOCK_ASSERTIONS=1",
+				);
+				OTHER_LDFLAGS = (
+					"-ObjC",
+					"$(inherited)",
+				);
 				PRODUCT_NAME = "$(TARGET_NAME)";
-				SKIP_INSTALL = YES;
+				SKIP_INSTALL = NO;
 				TARGETED_DEVICE_FAMILY = "1,2";
 			};
 			name = Release;

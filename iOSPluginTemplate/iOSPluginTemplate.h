@@ -1,12 +1,12 @@
-//
-//  iOSPluginTemplate.h
-//  iOSPluginTemplate
-//
-//  Created by George Marques on 10/09/25.
-//
+#pragma once
 
-#import <Foundation/Foundation.h>
+#include "core/object/ref_counted.h"
 
-@interface iOSPluginTemplate : NSObject
+class iOSPluginTemplate : public RefCounted {
+	GDCLASS(iOSPluginTemplate, RefCounted)
 
-@end
+	static void _bind_methods();
+
+public:
+	void hello_world();
+};
