@@ -2,7 +2,7 @@
 set -e
 
 # CHANGE THIS to the project name.
-PLUGIN_NAME=iOSPluginTemplate
+PLUGIN_NAME=godot-storekit2
 
 # Check if godot headers were generated.
 if [[ $(find godot -name '*.gen.h' | wc -l | awk '{$1=$1};1') == 0 ]]; then

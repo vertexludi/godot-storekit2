@@ -28,7 +28,7 @@ With the resulting folder under `bin`, you can put it in the Godot project under
 
 ## Updating the template
 
-Change the `iOSPluginTemplate` string with your plugin name in all files. Also rename the folders.
+Change the `godot-storekit2` string with your plugin name in all files. Also rename the folders.
 
 Adjust the development team in the build settings of the project on Xcode.
 

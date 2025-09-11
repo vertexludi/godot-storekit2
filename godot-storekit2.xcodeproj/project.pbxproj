@@ -19,26 +19,26 @@
 /* End PBXCopyFilesBuildPhase section */
 
 /* Begin PBXFileReference section */
-		5EF48ABC2E71AEE3007295F0 /* libiOSPluginTemplate.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = libiOSPluginTemplate.a; sourceTree = BUILT_PRODUCTS_DIR; };
+		5EF48ABC2E71AEE3007295F0 /* libgodot-storekit2.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = libgodot-storekit2.a; sourceTree = BUILT_PRODUCTS_DIR; };
 /* End PBXFileReference section */
 
 /* Begin PBXFileSystemSynchronizedGroupBuildPhaseMembershipExceptionSet section */
-		5EF48AC32E71AEE3007295F0 /* Exceptions for "iOSPluginTemplate" folder in "Copy Files" phase from "iOSPluginTemplate" target */ = {
+		5EF48AC32E71AEE3007295F0 /* Exceptions for "godot-storekit2" folder in "Copy Files" phase from "godot-storekit2" target */ = {
 			isa = PBXFileSystemSynchronizedGroupBuildPhaseMembershipExceptionSet;
 			buildPhase = 5EF48ABA2E71AEE3007295F0 /* CopyFiles */;
 			membershipExceptions = (
-				iOSPluginTemplate.h,
+				godot-storekit2.h,
 			);
 		};
 /* End PBXFileSystemSynchronizedGroupBuildPhaseMembershipExceptionSet section */
 
 /* Begin PBXFileSystemSynchronizedRootGroup section */
-		5EF48ABE2E71AEE3007295F0 /* iOSPluginTemplate */ = {
+		5EF48ABE2E71AEE3007295F0 /* godot-storekit2 */ = {
 			isa = PBXFileSystemSynchronizedRootGroup;
 			exceptions = (
-				5EF48AC32E71AEE3007295F0 /* Exceptions for "iOSPluginTemplate" folder in "Copy Files" phase from "iOSPluginTemplate" target */,
+				5EF48AC32E71AEE3007295F0 /* Exceptions for "godot-storekit2" folder in "Copy Files" phase from "godot-storekit2" target */,
 			);
-			path = iOSPluginTemplate;
+			path = godot-storekit2;
 			sourceTree = "<group>";
 		};
 /* End PBXFileSystemSynchronizedRootGroup section */
@@ -57,7 +57,7 @@
 		5EF48AB32E71AEE3007295F0 = {
 			isa = PBXGroup;
 			children = (
-				5EF48ABE2E71AEE3007295F0 /* iOSPluginTemplate */,
+				5EF48ABE2E71AEE3007295F0 /* godot-storekit2 */,
 				5EF48ABD2E71AEE3007295F0 /* Products */,
 			);
 			sourceTree = "<group>";
@@ -65,7 +65,7 @@
 		5EF48ABD2E71AEE3007295F0 /* Products */ = {
 			isa = PBXGroup;
 			children = (
-				5EF48ABC2E71AEE3007295F0 /* libiOSPluginTemplate.a */,
+				5EF48ABC2E71AEE3007295F0 /* libgodot-storekit2.a */,
 			);
 			name = Products;
 			sourceTree = "<group>";
@@ -73,9 +73,9 @@
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
-		5EF48ABB2E71AEE3007295F0 /* iOSPluginTemplate */ = {
+		5EF48ABB2E71AEE3007295F0 /* godot-storekit2 */ = {
 			isa = PBXNativeTarget;
-			buildConfigurationList = 5EF48AC62E71AEE3007295F0 /* Build configuration list for PBXNativeTarget "iOSPluginTemplate" */;
+			buildConfigurationList = 5EF48AC62E71AEE3007295F0 /* Build configuration list for PBXNativeTarget "godot-storekit2" */;
 			buildPhases = (
 				5EF48AB82E71AEE3007295F0 /* Sources */,
 				5EF48AB92E71AEE3007295F0 /* Frameworks */,
@@ -86,13 +86,13 @@
 			dependencies = (
 			);
 			fileSystemSynchronizedGroups = (
-				5EF48ABE2E71AEE3007295F0 /* iOSPluginTemplate */,
+				5EF48ABE2E71AEE3007295F0 /* godot-storekit2 */,
 			);
-			name = iOSPluginTemplate;
+			name = godot-storekit2;
 			packageProductDependencies = (
 			);
-			productName = iOSPluginTemplate;
-			productReference = 5EF48ABC2E71AEE3007295F0 /* libiOSPluginTemplate.a */;
+			productName = godot-storekit2;
+			productReference = 5EF48ABC2E71AEE3007295F0 /* libgodot-storekit2.a */;
 			productType = "com.apple.product-type.library.static";
 		};
 /* End PBXNativeTarget section */
@@ -109,7 +109,7 @@
 					};
 				};
 			};
-			buildConfigurationList = 5EF48AB72E71AEE3007295F0 /* Build configuration list for PBXProject "iOSPluginTemplate" */;
+			buildConfigurationList = 5EF48AB72E71AEE3007295F0 /* Build configuration list for PBXProject "godot-storekit2" */;
 			developmentRegion = en;
 			hasScannedForEncodings = 0;
 			knownRegions = (
@@ -123,7 +123,7 @@
 			projectDirPath = "";
 			projectRoot = "";
 			targets = (
-				5EF48ABB2E71AEE3007295F0 /* iOSPluginTemplate */,
+				5EF48ABB2E71AEE3007295F0 /* godot-storekit2 */,
 			);
 		};
 /* End PBXProject section */
@@ -337,7 +337,7 @@
 /* End XCBuildConfiguration section */
 
 /* Begin XCConfigurationList section */
-		5EF48AB72E71AEE3007295F0 /* Build configuration list for PBXProject "iOSPluginTemplate" */ = {
+		5EF48AB72E71AEE3007295F0 /* Build configuration list for PBXProject "godot-storekit2" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
 				5EF48AC42E71AEE3007295F0 /* Debug */,
@@ -346,7 +346,7 @@
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
 		};
-		5EF48AC62E71AEE3007295F0 /* Build configuration list for PBXNativeTarget "iOSPluginTemplate" */ = {
+		5EF48AC62E71AEE3007295F0 /* Build configuration list for PBXNativeTarget "godot-storekit2" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
 				5EF48AC72E71AEE3007295F0 /* Debug */,
