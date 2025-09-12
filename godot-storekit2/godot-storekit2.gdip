@@ -1,9 +1,10 @@
 [config]
 name="godot-storekit2"
 binary="godot-storekit2.xcframework"
+use_swift_runtime=true
 
-initialization="register_ios_plugin_template_types"
-deinitialization="unregister_ios_plugin_template_types"
+initialization="register_godot_storekit2_types"
+deinitialization="unregister_godot_storekit2_types"
 
 [dependencies]
 linked=[]
