@@ -9,7 +9,7 @@ deinitialization="unregister_godot_storekit2_types"
 [dependencies]
 linked=[]
 embedded=[]
-system=[]
+system=["Foundation.framework", "StoreKit.framework"]
 
 capabilities=[]
 

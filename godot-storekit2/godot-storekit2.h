@@ -17,28 +17,29 @@ class GodotStoreKit2 : public RefCounted {
 	static void _bind_methods();
 
 	void _on_transaction_state_changed(TransactionData *data);
-	void _on_initialization_state_changed(InitializationData *data);
 
 public:
+	// Keep in sync with Swift enum.
 	enum TransactionState {
 		FAILED,
 		REFUNDED,
-		PURCHASING,
+		PENDING,
 		DEFERRED,
 		PURCHASED,
 		RESTORED,
+		EXPIRED,
+		CANCELED,
 	};
-
 
 	void initialize();
 	bool is_initialized() const;
 	bool is_product_available(String p_product_id);
 	bool is_product_purchased(String p_product_id);
-	Dictionary get_product_price(String p_product_id);
+	Signal request_product_info(String p_product_id);
+	void request_product_price(String p_product_id);
 	void purchase_product(String p_product_id, int p_quantity = 1);
 	void restore_purchases();
 	GodotStoreKit2();
-	~GodotStoreKit2();
 };
 
 VARIANT_ENUM_CAST(GodotStoreKit2::TransactionState)
