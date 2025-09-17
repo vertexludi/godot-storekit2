@@ -19,6 +19,7 @@
 /* End PBXCopyFilesBuildPhase section */
 
 /* Begin PBXFileReference section */
+		5E8599F42E7B00C500BB9BFD /* README.md */ = {isa = PBXFileReference; lastKnownFileType = net.daringfireball.markdown; path = README.md; sourceTree = "<group>"; };
 		5EF48ABC2E71AEE3007295F0 /* libgodot-storekit2.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = "libgodot-storekit2.a"; sourceTree = BUILT_PRODUCTS_DIR; };
 /* End PBXFileReference section */
 
@@ -57,6 +58,7 @@
 		5EF48AB32E71AEE3007295F0 = {
 			isa = PBXGroup;
 			children = (
+				5E8599F42E7B00C500BB9BFD /* README.md */,
 				5EF48ABE2E71AEE3007295F0 /* godot-storekit2 */,
 				5EF48ABD2E71AEE3007295F0 /* Products */,
 			);

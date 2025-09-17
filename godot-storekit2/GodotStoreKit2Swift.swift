@@ -5,8 +5,6 @@ import StoreKit
 public final class GodotStoreKit2Proxy: NSObject,
 @unchecked Sendable
 {
-
-	private var initialized = false
 	private var updates: Task<Void, Never>? = nil
 	private var unfinished: Task<Void, Never>? = nil
 	private var transactionCallback: (TransactionData) -> ()
@@ -66,14 +64,6 @@ public final class GodotStoreKit2Proxy: NSObject,
 
 	public func test() -> Bool {
 		return true;
-	}
-
-	public func initialize() -> Void {
-		initialized = true;
-	}
-
-	public func isInitialized() -> Bool {
-		return initialized;
 	}
 
 	public func isProductAvailable(productId: NSString) -> Bool {
