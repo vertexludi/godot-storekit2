@@ -11,11 +11,10 @@ static NSString *fromGodotString(const String &src) {
 }
 
 static String toGodotString(NSString *src) {
-	return String(src.UTF8String);
+	return String::utf8(src.UTF8String);
 }
 
 void GodotStoreKit2::_bind_methods() {
-	ClassDB::bind_method(D_METHOD("request_product_price", "product_id"), &GodotStoreKit2::request_product_price);
 	ClassDB::bind_method(D_METHOD("request_product_info", "product_id"), &GodotStoreKit2::request_product_info);
 	ClassDB::bind_method(D_METHOD("purchase_product", "product_id", "quantity"), &GodotStoreKit2::purchase_product, DEFVAL(1));
 	ClassDB::bind_method(D_METHOD("sync"), &GodotStoreKit2::sync);
@@ -59,28 +58,11 @@ Signal GodotStoreKit2::request_product_info(String p_product_id) {
 	return Signal(this, "product_info_received");
 }
 
-Signal GodotStoreKit2::request_product_price(String p_product_id) {
-	[proxy getProductPriceWithProductId:fromGodotString(p_product_id) completionHandler:^(PriceInfo *info, NSError *error) {
-		Dictionary result;
-		if (error) {
-			result["error"] = toGodotString(error.userInfo[NSLocalizedDescriptionKey]);
-		} else {
-			result["error"] = String();
-			result["currency_value"] = info.currencyValue;
-			result["currency_code"] =  toGodotString(info.currencyCode);
-			result["currency_symbol"] = toGodotString(info.currencySymbol);
-			result["localized_price"] = toGodotString(info.localizedDisplay);
-		}
-
-		call_deferred("emit_signal", "product_price_received", result);
-	}];
-
-	return Signal(this, "product_price_received");
-}
-
 Signal GodotStoreKit2::purchase_product(String p_product_id, int p_quantity) {;
 	[proxy purchaseProductWithProductId:fromGodotString(p_product_id) quantity:p_quantity completionHandler:^(TransactionData *data, NSError *error) {
 		Dictionary result;
+		// TODO: Always add the product_id (and transaction state).
+		// Catch error on Swift, give all info from there
 		if (error) {
 			result["error"] = toGodotString(error.userInfo[NSLocalizedDescriptionKey]);
 		} else{

@@ -77,7 +77,7 @@ public final class GodotStoreKit2Proxy: NSObject,
 	private func priceInfoFromProduct(product: Product) -> PriceInfo {
 		let info = PriceInfo()
 		info.currencyValue = product.price as NSDecimalNumber
-		info.localizedDisplay = String(data: product.displayPrice.data(using: .utf8)!, encoding: .utf8)!
+		info.localizedDisplay = product.displayPrice
 		info.currencyCode = product.priceFormatStyle.currencyCode
 
 		// Get the currency symbol.
